@@ -51,7 +51,32 @@ ul {
 }
 
 .offbit {
-  font-family: "Offbit";
+  font-family: "OffBit Trial";
+}
+
+.h1 {
+  color: #000000;
+  font-family: "Armag-Trial";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  letter-spacing: -2.16px;
+}
+@media (max-width: 576px) {
+  .h1 {
+    font-size: 38px;
+  }
+}
+
+.text-18 {
+  color: #000000;
+  font-family: "Fragment Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.54px;
 }
 
 .button {
@@ -240,31 +265,11 @@ ul {
 }
 .main-screen__title {
   margin: 0 0 20px;
-  font-family: "Armag-Trial";
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90%;
-  letter-spacing: -2.16px;
   text-align: center;
-}
-@media (max-width: 576px) {
-  .main-screen__title {
-    font-size: 38px;
-  }
-}
-.main-screen__title span {
-  font-family: "OffBit Trial";
 }
 .main-screen__description {
   max-width: 558px;
   margin: 0 auto 40px;
-  font-family: "Fragment Mono";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  letter-spacing: 0.54px;
   text-align: center;
 }
 @media (max-width: 768px) {
@@ -283,4 +288,52 @@ ul {
     padding: 17px 38px;
     font-size: 14px;
   }
+}
+
+.back-creators {
+  padding: 100px 0;
+}
+@media (max-width: 768px) {
+  .back-creators {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 576px) {
+  .back-creators {
+    padding: 20px 0;
+  }
+}
+.back-creators__title {
+  max-width: 676px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .back-creators__title {
+    max-width: 578px;
+  }
+}
+@media (max-width: 576px) {
+  .back-creators__title {
+    max-width: 351px;
+  }
+}
+.back-creators__description {
+  max-width: 516px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .back-creators__description {
+    max-width: 458px;
+  }
+}
+@media (max-width: 576px) {
+  .back-creators__description {
+    max-width: 341px;
+  }
+}
+.back-creators__info {
+  color: violet;
+  text-align: center;
 }

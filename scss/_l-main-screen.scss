@@ -15,32 +15,12 @@
 
   &__title {
     margin: 0 0 20px;
-    font-family: 'Armag-Trial';
-    font-size: 72px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 90%;
-    letter-spacing: -2.16px;
     text-align: center;
-
-    @include mobile {
-      font-size: 38px;
-    }
-
-    & span {
-      font-family: 'OffBit Trial';
-    }
   }
 
   &__description {
     max-width: 558px;
     margin: 0 auto 40px;
-    font-family: 'Fragment Mono';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-    letter-spacing: 0.54px;
     text-align: center;
 
     @include tablet {
