@@ -51,7 +51,11 @@ ul {
 }
 
 .offbit {
-  font-family: "OffBit Trial";
+  font-family: "OffBit Trial" !important;
+}
+
+.suisse {
+  font-family: "Suisse Intl" !important;
 }
 
 .h1 {
@@ -65,6 +69,21 @@ ul {
 }
 @media (max-width: 576px) {
   .h1 {
+    font-size: 38px;
+  }
+}
+
+.h3 {
+  color: #000000;
+  font-family: "Armag-Trial";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  letter-spacing: -1.14px;
+}
+@media (max-width: 576px) {
+  .h3 {
     font-size: 38px;
   }
 }
@@ -336,4 +355,123 @@ ul {
 .back-creators__info {
   color: violet;
   text-align: center;
+}
+
+.benefits {
+  padding: 80px 0 120px;
+}
+@media (max-width: 576px) {
+  .benefits {
+    padding: 40px 0;
+  }
+}
+.benefits__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 40px;
+}
+@media (max-width: 576px) {
+  .benefits__nav {
+    margin-bottom: 20px;
+  }
+}
+.benefits__nav-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 14px 21px;
+  font-family: "Fragment Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  border-radius: 300px;
+  background-color: #ffffff;
+  -webkit-transition: all ease-in-out 0.15s;
+  transition: all ease-in-out 0.15s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  .benefits__nav-item {
+    padding: 9px 16px;
+    font-size: 14px;
+  }
+}
+.benefits__nav-item_musicians.active, .benefits__nav-item_musicians:hover {
+  background-color: #ffc6ff;
+}
+.benefits__nav-item_nft-artists.active, .benefits__nav-item_nft-artists:hover {
+  background-color: #ffc122;
+}
+.benefits__nav-item_game-designers.active, .benefits__nav-item_game-designers:hover {
+  color: #ffffff;
+  background-color: #ad44ff;
+}
+.benefits__nav-item_cinematographers.active, .benefits__nav-item_cinematographers:hover {
+  background-color: #f7af90;
+}
+.benefits__nav-item_metasites.active, .benefits__nav-item_metasites:hover {
+  background-color: #dcff40;
+}
+.benefits__nav-item_bloggers.active, .benefits__nav-item_bloggers:hover {
+  background-color: #ff7100;
+}
+.benefits__card {
+  display: none;
+  opacity: 0;
+  -webkit-transition: all ease-in-out 0.15s;
+  transition: all ease-in-out 0.15s;
+}
+.benefits__card.active {
+  display: block;
+  opacity: 1;
+}
+.benefits__card-title {
+  margin: 0 0 20px;
+  text-align: center;
+}
+.benefits__card-description {
+  max-width: 390px;
+  margin: 0 auto 40px;
+  color: #75819c;
+  text-align: center;
+}
+.benefits__card-content {
+  max-width: 1166px;
+  height: 506px;
+  border-radius: 40px;
+}
+.benefits__card-content_musicians {
+  background-color: #ffc6ff;
+}
+.benefits__card-content_nft-artists {
+  background-color: #ffc122;
+}
+.benefits__card-content_game-designers {
+  background-color: #ad44ff;
+}
+.benefits__card-content_cinematographers {
+  background-color: #f7af90;
+}
+.benefits__card-content_metasites {
+  background-color: #dcff40;
+}
+.benefits__card-content_bloggers {
+  background-color: #ff7100;
 }

@@ -53,31 +53,3 @@ ul {
   margin: 1rem 0;
   padding-left: 1.125rem;
 }
-
-.offbit {
-  font-family: 'OffBit Trial';
-}
-
-.h1 {
-  color: $black;
-  font-family: 'Armag-Trial';
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 90%;
-  letter-spacing: -2.16px;
-
-  @include mobile {
-    font-size: 38px;
-  }
-}
-
-.text-18 {
-  color: $black;
-  font-family: 'Fragment Mono';
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  letter-spacing: 0.54px;
-}
