@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap");
+@font-face {
+  font-family: "Suisse Intl";
+  src: url(../fonts/SuisseIntl-Regular.otf);
+}
+@font-face {
+  font-family: "Armag-Trial";
+  src: url(../fonts/armag-fury.otf);
+}
+@font-face {
+  font-family: "OffBit Trial";
+  src: url(../fonts/OffBitTrial-Bold.otf);
+}
+html {
+  color: #000000;
+  font-size: 16px;
+  font-family: "Suisse Intl", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  background-color: #eef1f8;
+}
+
+a,
+button,
+input,
+textarea {
+  font-family: "Suisse Intl", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+ul {
+  margin: 1rem 0;
+  padding-left: 1.125rem;
+}
+
+.offbit {
+  font-family: "Offbit";
+}
+
+.button {
+  display: inline-block;
+  padding: 17px 38px;
+  color: #ffffff;
+  font-family: "Suisse Intl";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  background: #000000;
+  -webkit-transition: all ease-in-out 0.15s;
+  transition: all ease-in-out 0.15s;
+  will-change: transform;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #ad44ff;
+}
+.button:active {
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+}
+.button:disabled {
+  background-color: #cecece;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 137px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 36px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+.logo a {
+  display: inline-block;
+}
+.logo a img {
+  height: 43px;
+  width: auto;
+}
+@media (max-width: 576px) {
+  .logo a img {
+    height: 33px;
+  }
+}
+
+.header {
+  position: relative;
+  padding: 20px 0;
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 8px 0;
+  }
+}
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 375px;
+  padding: 60px 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  visibility: hidden;
+  color: #000000;
+  font-family: "Armag-Trial";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  letter-spacing: -1.14px;
+  border-radius: 12px;
+  background: #eef1f8;
+  -webkit-box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.2s;
+  transition: opacity ease-in-out 0.2s;
+  will-change: opacity;
+}
+@media (max-width: 768px) {
+  .header__menu.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.header__menu-button {
+  margin: 0;
+  padding: 0;
+  font-family: "Armag-Trial";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  text-decoration: underline;
+  border: none;
+  background: none;
+}
+.header__menu-text {
+  text-align: center;
+}
+.header__menu-text a {
+  color: #000000;
+  font-family: "Armag-Trial";
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .header__early-access {
+    display: none;
+  }
+}
+.header__hamburger {
+  display: none;
+  height: 42px;
+  width: 42px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+  background-image: url(../assets/icons/hamburger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: all ease-in-out 0.15s;
+  transition: all ease-in-out 0.15s;
+  will-change: transform;
+  cursor: pointer;
+}
+.header__hamburger:active {
+  -webkit-transform: scale(0.96);
+      -ms-transform: scale(0.96);
+          transform: scale(0.96);
+}
+@media (max-width: 768px) {
+  .header__hamburger {
+    display: inline-block;
+  }
+}
+.header__hamburger.active {
+  background-image: url(../assets/icons/x-close.svg);
+}
+
+.main-screen {
+  padding: 208px 0;
+  background: url(../assets/main-screen-bg.jpg) center no-repeat;
+}
+.main-screen__content {
+  margin: 0 auto;
+  max-width: 680px;
+}
+.main-screen__title {
+  margin: 0 0 20px;
+  font-family: "Armag-Trial";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  letter-spacing: -2.16px;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .main-screen__title {
+    font-size: 38px;
+  }
+}
+.main-screen__title span {
+  font-family: "OffBit Trial";
+}
+.main-screen__description {
+  max-width: 558px;
+  margin: 0 auto 40px;
+  font-family: "Fragment Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.54px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .main-screen__description {
+    max-width: 458px;
+  }
+}
+.main-screen__button {
+  display: block;
+  margin: 0 auto;
+  padding: 31px 73px;
+  font-size: 18px;
+}
+@media (max-width: 576px) {
+  .main-screen__button {
+    padding: 17px 38px;
+    font-size: 14px;
+  }
+}
