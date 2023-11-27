@@ -454,8 +454,18 @@ ul {
 }
 .benefits__card-content {
   max-width: 1166px;
-  height: 506px;
+  padding: 38px 85px 0;
   border-radius: 40px;
+}
+@media (max-width: 1200px) {
+  .benefits__card-content {
+    padding: 50px 60px 0;
+  }
+}
+@media (max-width: 576px) {
+  .benefits__card-content {
+    padding: 40px 20px 0;
+  }
 }
 .benefits__card-content_musicians {
   background-color: #ffc6ff;
@@ -474,4 +484,29 @@ ul {
 }
 .benefits__card-content_bloggers {
   background-color: #ff7100;
+}
+.benefits__card-content-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 576px) {
+  .benefits__card-content-image_web {
+    display: none;
+  }
+}
+.benefits__card-content-image_mob {
+  display: none;
+}
+@media (max-width: 576px) {
+  .benefits__card-content-image_mob {
+    display: block;
+    max-width: 287px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px 12px 0 0;
+  }
 }
