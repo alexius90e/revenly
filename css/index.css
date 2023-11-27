@@ -1327,16 +1327,61 @@ ul {
     background-size: 640px;
   }
 }
+.early-bird .container {
+  position: relative;
+}
+.early-bird .container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 348px;
+  height: 344px;
+  background: url(../assets/bird.png) center no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1200px) {
+  .early-bird .container::before {
+    top: 100px;
+    width: 248px;
+    height: 244px;
+  }
+}
+@media (max-width: 992px) {
+  .early-bird .container::before {
+    top: 240px;
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .early-bird .container::before {
+    top: auto;
+    bottom: -150px;
+  }
+}
+@media (max-width: 576px) {
+  .early-bird .container::before {
+    display: none;
+  }
+}
 .early-bird__title {
+  position: relative;
+  z-index: 2;
   max-width: 676px;
   margin: 0 auto 20px;
   text-align: center;
 }
 .early-bird__description {
+  position: relative;
+  z-index: 2;
+  max-width: 516px;
   margin: 0 auto 40px;
   text-align: center;
 }
 .early-bird__buttons {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
