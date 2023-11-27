@@ -558,3 +558,130 @@ ul {
   display: block;
   margin: 0 auto;
 }
+
+.conditions {
+  padding-top: 120px;
+  overflow: hidden;
+}
+.conditions .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 12px;
+}
+.conditions__card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 48%;
+          flex: 1 1 48%;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 250px;
+  padding: 40px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 40px;
+  background-color: #ffffff;
+}
+@media (max-width: 992px) {
+  .conditions__card {
+    min-height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .conditions__card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 330px;
+            flex: 1 1 330px;
+  }
+}
+@media (max-width: 576px) {
+  .conditions__card {
+    min-height: 212px;
+  }
+}
+.conditions__card_bg {
+  background-image: url(../assets/conditions-card-bg.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+@media (max-width: 576px) {
+  .conditions__card_bg {
+    background-position: right -20px center;
+  }
+}
+.conditions__card_flower {
+  position: relative;
+}
+.conditions__card_flower::after {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -135px;
+  z-index: 2;
+  display: block;
+  height: 200px;
+  width: 200px;
+  background: url(../assets/flower.png) center no-repeat;
+}
+@media (max-width: 992px) {
+  .conditions__card_flower::after {
+    right: -70px;
+  }
+}
+@media (max-width: 576px) {
+  .conditions__card_flower::after {
+    display: none;
+  }
+}
+.conditions__card_bucks {
+  position: relative;
+}
+.conditions__card_bucks::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -144px;
+  z-index: -1;
+  display: block;
+  height: 246px;
+  width: 246px;
+  background: url(../assets/dollar.png) center no-repeat;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media (max-width: 1200px) {
+  .conditions__card_bucks::after {
+    top: 0px;
+    left: -68px;
+  }
+}
+@media (max-width: 576px) {
+  .conditions__card_bucks::after {
+    display: none;
+  }
+}
+.conditions__card-title {
+  margin: 0 0 20px;
+  color: #7000ff;
+}
+.conditions__card-description {
+  margin: 0;
+  line-height: 120%;
+  color: #75819c;
+}
