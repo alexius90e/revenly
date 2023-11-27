@@ -1389,3 +1389,181 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.academy {
+  padding: 0 0 40px;
+}
+.academy__title {
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.academy__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+.academy__card {
+  position: relative;
+  height: 470px;
+  padding: 40px 20px 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 40px;
+}
+.academy__card_statistics {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 260px;
+          flex: 0 0 260px;
+  background-color: #dcff40;
+  background-image: url(../assets/academy/academy-1.png);
+  background-position: top 0 left;
+  background-repeat: no-repeat;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+@media (max-width: 576px) {
+  .academy__card_statistics {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    background-size: 100% 60%;
+  }
+}
+.academy__card_statistics:last-child {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+@media (max-width: 992px) {
+  .academy__card_statistics:last-child {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+.academy__card_learning {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 34%;
+          flex: 1 1 34%;
+  background-color: #ffffff;
+  background-image: url(../assets/academy/academy-2.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+@media (max-width: 992px) {
+  .academy__card_learning {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 calc(100% - 280px);
+            flex: 1 1 calc(100% - 280px);
+  }
+}
+@media (max-width: 576px) {
+  .academy__card_learning {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+.academy__card_newbies {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 332px;
+          flex: 1 1 332px;
+  background-color: #dcff40;
+  background-image: url(../assets/academy/academy-3.jpg);
+  background-position: top center;
+  background-repeat: repeat-x;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+@media (max-width: 992px) {
+  .academy__card_newbies {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 calc(100% - 280px);
+            flex: 1 1 calc(100% - 280px);
+  }
+}
+@media (max-width: 576px) {
+  .academy__card_newbies {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+.academy__card_roadshow {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(100% - 270px);
+          flex: 1 1 calc(100% - 270px);
+  background-color: #75819c;
+  background-image: url(../assets/academy/academy-4.jpg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+@media (max-width: 992px) {
+  .academy__card_roadshow {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+}
+@media (max-width: 768px) {
+  .academy__card_roadshow {
+    background-position: top center;
+  }
+}
+.academy__card-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4px;
+}
+.academy__card-tag {
+  padding: 9px 16px;
+  color: #000000;
+  font-family: "Fragment Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  border-radius: 40px;
+  background-color: #ffffff;
+}
+.academy__card-tag_alt {
+  background-color: #dcff40;
+}
+.academy__card-tag_date {
+  background: rgba(0, 0, 0, 0);
+}
+.academy__card-tag_date-alt {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0);
+}
+.academy__card-text {
+  position: absolute;
+  top: 350px;
+  left: 20px;
+  right: 20px;
+  margin: 0;
+}
+.academy__card-text_light {
+  color: #ffffff;
+}
