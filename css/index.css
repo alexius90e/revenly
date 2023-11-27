@@ -1310,3 +1310,37 @@ ul {
     text-align: center;
   }
 }
+
+.early-bird {
+  padding: 220px 0;
+  background: url(../assets/elipse-bg.svg) center no-repeat;
+}
+@media (max-width: 768px) {
+  .early-bird {
+    padding: 120px 0 200px;
+    background-size: 768px;
+  }
+}
+@media (max-width: 576px) {
+  .early-bird {
+    padding: 82px 0;
+    background-size: 640px;
+  }
+}
+.early-bird__title {
+  max-width: 676px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.early-bird__description {
+  margin: 0 auto 40px;
+  text-align: center;
+}
+.early-bird__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
