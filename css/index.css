@@ -97,6 +97,11 @@ ul {
   line-height: 130%;
   letter-spacing: 0.54px;
 }
+@media (max-width: 576px) {
+  .text-18 {
+    font-size: 14px;
+  }
+}
 
 .button {
   display: inline-block;
@@ -509,4 +514,47 @@ ul {
     margin: 0 auto;
     border-radius: 12px 12px 0 0;
   }
+}
+
+.early-adopters .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url(../assets/early-adopters-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .early-adopters .container {
+    padding-top: 69px;
+    padding-bottom: 69px;
+  }
+}
+@media (max-width: 576px) {
+  .early-adopters .container {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+.early-adopters__title {
+  max-width: 676px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .early-adopters__title {
+    max-width: 578px;
+  }
+}
+.early-adopters__description {
+  max-width: 516px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .early-adopters__description {
+    max-width: 458px;
+  }
+}
+.early-adopters__button {
+  display: block;
+  margin: 0 auto;
 }
