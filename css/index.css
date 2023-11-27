@@ -103,6 +103,17 @@ ul {
   }
 }
 
+.text-20 {
+  color: #000000;
+  font-family: "Fragment Mono";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
 .button {
   display: inline-block;
   padding: 17px 38px;
@@ -684,4 +695,54 @@ ul {
   margin: 0;
   line-height: 120%;
   color: #75819c;
+}
+
+.why-nft {
+  padding: 120px 0;
+  background: url(../assets/elipse-bg.svg) center no-repeat;
+  background-size: 100% 100%;
+}
+@media (max-width: 992px) {
+  .why-nft {
+    background-size: 1200px 100%;
+  }
+}
+@media (max-width: 576px) {
+  .why-nft {
+    padding: 80px 0;
+    background-size: 900px 100%;
+  }
+}
+.why-nft__title {
+  margin: 0 0 20px;
+  text-align: center;
+}
+.why-nft__list {
+  max-width: 676px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+.why-nft__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  margin: 0 0 10px;
+  padding: 30px 35px 30px 0;
+  border-radius: 9px;
+  background-color: #ffffff;
+}
+.why-nft__list-item:last-child {
+  margin: 0;
+}
+.why-nft__list-item-id {
+  display: inline-block;
+  padding: 0 36px;
+}
+.why-nft__list-item-text {
+  display: inline-block;
 }
