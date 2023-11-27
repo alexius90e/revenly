@@ -410,7 +410,7 @@ ul {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%; /* 16px */
+  line-height: 100%;
   letter-spacing: 0.48px;
   text-transform: uppercase;
   border-radius: 300px;
@@ -745,4 +745,163 @@ ul {
 }
 .why-nft__list-item-text {
   display: inline-block;
+}
+
+.creative-money {
+  padding: 0 0 120px;
+  overflow: hidden;
+}
+@media (max-width: 576px) {
+  .creative-money {
+    padding-bottom: 80px;
+  }
+}
+.creative-money__title {
+  max-width: 966px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .creative-money__title {
+    margin-bottom: 50px;
+  }
+}
+.creative-money__steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 67px;
+  margin: 0 0 80px;
+}
+@media (max-width: 992px) {
+  .creative-money__steps {
+    gap: 12px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .creative-money__steps {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 27px;
+  }
+}
+@media (max-width: 576px) {
+  .creative-money__steps {
+    margin-bottom: 56px;
+  }
+}
+.creative-money__step {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%;
+  padding: 28px 35px;
+  border-radius: 35px;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 700px) {
+  .creative-money__step {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+.creative-money__step::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -47px;
+  z-index: 5;
+  height: 59px;
+  width: 27px;
+  background: url(../assets/icons/trapeze.svg) center no-repeat;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media (max-width: 992px) {
+  .creative-money__step::after {
+    right: -18px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .creative-money__step::after {
+    left: 50%;
+    right: auto;
+    top: calc(100% - 16px);
+    -webkit-transform: translateX(-50%) translateY(0) rotate(90deg);
+        -ms-transform: translateX(-50%) translateY(0) rotate(90deg);
+            transform: translateX(-50%) translateY(0) rotate(90deg);
+  }
+}
+.creative-money__step:last-child::after {
+  display: none;
+}
+.creative-money__step-title {
+  margin: 0 0 20px;
+  color: #ad44ff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.creative-money__step-name {
+  margin: 0 0 10px;
+  color: #000000;
+}
+.creative-money__step-text {
+  margin: 0;
+  color: #75819c;
+}
+.creative-money__subtitle {
+  position: relative;
+  margin: 0 auto 20px;
+  text-align: center;
+  color: #ad44ff;
+}
+.creative-money__subtitle::after {
+  content: "";
+  position: absolute;
+  right: 53px;
+  bottom: -40px;
+  display: block;
+  width: 219px;
+  height: 200px;
+  background: url(../assets/metal-head.png) center no-repeat;
+}
+@media (max-width: 992px) {
+  .creative-money__subtitle::after {
+    right: auto;
+    left: calc(50% + 200px);
+  }
+}
+@media (max-width: 768px) {
+  .creative-money__subtitle::after {
+    left: calc(50% + 140px);
+  }
+}
+@media (max-width: 576px) {
+  .creative-money__subtitle::after {
+    display: none;
+  }
+}
+.creative-money__description {
+  max-width: 420px;
+  margin: 0 auto 40px;
+  color: #75819c;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .creative-money__description {
+    margin-bottom: 20px;
+  }
+}
+.creative-money__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
