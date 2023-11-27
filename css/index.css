@@ -905,3 +905,140 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.choose-role {
+  padding: 0 0 80px;
+  overflow: hidden;
+}
+.choose-role__title {
+  max-width: 676px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+.choose-role__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+@media (max-width: 1200px) {
+  .choose-role__cards {
+    gap: 12px;
+  }
+}
+@media (max-width: 992px) {
+  .choose-role__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .choose-role__cards {
+    gap: 20px;
+  }
+}
+.choose-role__card {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  padding: 100px 20px 40px;
+  border-radius: 40px;
+  background-color: #ffffff;
+}
+@media (max-width: 576px) {
+  .choose-role__card {
+    padding-top: 90px;
+  }
+}
+.choose-role__card::after {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  display: block;
+  width: 345px;
+  height: 323px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.choose-role__card_investor::after {
+  top: -152px;
+  left: -46px;
+  background-image: url(../assets/crystal.png);
+}
+@media (max-width: 992px) {
+  .choose-role__card_investor::after {
+    top: -60px;
+    left: auto;
+    right: 39px;
+    width: 218px;
+    height: 204px;
+  }
+}
+@media (max-width: 576px) {
+  .choose-role__card_investor::after {
+    top: -40px;
+    right: 0;
+    width: 208px;
+    height: 194px;
+  }
+}
+.choose-role__card_producer::after {
+  top: -151px;
+  right: -121px;
+  background-image: url(../assets/metal-dog.png);
+}
+@media (max-width: 992px) {
+  .choose-role__card_producer::after {
+    top: -91px;
+    right: -29px;
+    width: 285px;
+    height: 266px;
+  }
+}
+@media (max-width: 576px) {
+  .choose-role__card_producer::after {
+    top: -64px;
+    right: -12px;
+    width: 249px;
+    height: 231px;
+    -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+  }
+}
+.choose-role__card_creator::after {
+  top: -124px;
+  right: -105px;
+  background-image: url(../assets/girl-in-sky.png);
+}
+@media (max-width: 992px) {
+  .choose-role__card_creator::after {
+    top: -97px;
+    right: -43px;
+    width: 312px;
+    height: 293px;
+  }
+}
+@media (max-width: 576px) {
+  .choose-role__card_creator::after {
+    top: -53px;
+    right: -12px;
+    width: 247px;
+    height: 233px;
+  }
+}
+.choose-role__card-title {
+  margin: 0 0 20px;
+  color: #ad44ff;
+}
+.choose-role__card-description {
+  margin: 0;
+  color: #75819c;
+}
