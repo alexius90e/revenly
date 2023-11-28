@@ -24,6 +24,8 @@
         border-radius: 4px;
         background-color: $green;
 
+
+
         @include mobile {
           gap: 20px;
           padding: 10px;
@@ -51,15 +53,23 @@
         max-height: 0px;
         box-sizing: border-box;
         overflow: hidden;
-        transition: max-height linear 0.1s;
-        will-change: max-height;
+        transition: transform linear 0.1s;
+        transform: scale(1, 0);
+        will-change: transform;
+
+
+        @keyframes showAnswer {
+          from {max-height: 0px;}
+          to {max-height: 300px;}
+        }
 
         @include mobile {
           padding: 0px 30px 0 10px;
         }
 
         &.active {
-          max-height: 200px;
+          max-height: fit-content;
+          transform: scale(1, 1);
         }
 
         &::before {
