@@ -60,16 +60,13 @@
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
-      line-height: 100%; /* 14px */
+      line-height: 100%;
       letter-spacing: 0.42px;
       text-transform: uppercase;
 
       &_basic {
         border-radius: 40px;
         background-color: $green;
-      }
-
-      &_date {
       }
     }
   }
