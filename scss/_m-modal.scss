@@ -15,289 +15,83 @@
     justify-content: center;
   }
 
-  &__content {
-    position: relative;
-    max-height: 90vh;
-    max-width: 800px;
+  &__body {
+    max-width: 1440px;
     width: 100%;
-    padding: 40px 45px;
-    overflow: auto;
+    padding: 97px 20px;
     box-sizing: border-box;
-    border-radius: 30px;
-    background-color: $white;
-
-    @include tablet {
-      padding: 14px 15px;
-      border-radius: 20px;
-    }
+    background: url(../assets/modal-bg.jpg) center no-repeat;
   }
 
-  &__button-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    border: none;
-    border-radius: 50px;
-    background-color: $white200;
-    background-image: url(../assets/icons/xmark.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 12px;
-    cursor: pointer;
+  &__content {
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 72px 120px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background-color: $paleBlue;
 
     @include tablet {
-      height: 30px;
-      width: 30px;
+      padding: 60px 120px;
+    }
+
+    @include mobile {
+      padding: 40px 10px;
     }
   }
 
   &__title {
-    margin: 0 0 8px;
-    color: $black;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.72px;
+    margin: 0 0 30px;
+    text-align: center;
 
-    &_filter {
-      margin: 0 0 20px;
+    @include tablet {
+      margin: 0 0 10px;
+      font-size: 38px;
     }
   }
 
   &__description {
-    margin: 0 0 30px;
-    color: $black;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    margin: 0 0 44px;
+    text-align: center;
   }
 
   &__form {
   }
 
-  &__fieldset {
-    margin: 0 0 20px;
-    padding: 0;
-    border: none;
-
-    @include tablet {
-      margin: 0 0 10px;
-    }
-
-    &:last-child {
-      margin: 0;
-    }
-
-    &-title {
-      margin: 0 0 12px;
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-    }
-
-    &_inputs {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-
-      @include tablet {
-        gap: 10px;
-      }
-
-      @include mobile {
-        flex-direction: column;
-      }
-    }
-
-    &_submit {
-      padding-top: 20px;
-      display: flex;
-      align-items: center;
-      gap: 26px;
-
-      @include tablet {
-        padding-top: 15px;
-      }
-
-      & .button {
-        flex: 0 0 auto;
-      }
-    }
-  }
-
-  &__form_filter &__fieldset {
-    margin: 20px 0;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &__form_filter &__fieldset_submit {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
   &__input {
     display: inline-block;
     width: 100%;
-    padding: 14px 15px;
+    margin: 0 0 18px;
+    padding: 12px 16px;
     box-sizing: border-box;
     border: none;
-    border-radius: 16px;
+    border-bottom: 1px solid $black;
     color: $black;
-    font-size: 14px;
+    font-family: 'Suisse Intl';
+    font-size: 18px;
     font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.42;
+    font-weight: 400;
+    line-height: 120%;
     outline-color: rgba($color: $black, $alpha: 0.05);
-    background-color: $white200;
+    background: none;
   }
 
-  &__fieldset_inputs &__input {
-    flex: 1 1 auto;
-  }
-
-  &__textarea {
-    display: inline-block;
-    height: 81px;
+  & .button {
+    display: block;
     width: 100%;
-    padding: 10px 15px;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 16px;
-    color: $black;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.42;
-    outline-color: rgba($color: $black, $alpha: 0.05);
-    background-color: $white200;
-    resize: vertical;
-  }
-
-  &__link {
-    color: rgba($color: $black, $alpha: 0.6);
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.36px;
-    text-decoration-line: underline;
-  }
-
-  &__checkbox {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: fit-content;
-    margin: 0 0 8px;
-    color: $black;
-    font-size: 14px;
+    margin-top: 85px;
+    padding: 31px 73px;
+    font-family: 'Suisse Intl';
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.42px;
-    user-select: none;
-    cursor: pointer;
+    line-height: 100%;
+    text-transform: uppercase;
 
-    &:last-child {
-      margin: 0;
-    }
-
-    & input {
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
-      height: 0;
-      width: 0;
-    }
-
-    & .checkmark {
-      display: inline-block;
-      height: 16px;
-      width: 16px;
-      border-radius: 4px;
-      background-color: $white;
-      background-image: url(../assets/icons/ui-checkbox.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 16px;
-    }
-
-    & input:checked ~ .checkmark {
-      background-image: url(../assets/icons/ui-checkbox-checked.svg);
-    }
-  }
-
-  & .custom-select {
-    padding: 0;
-
-    & .select-selected {
-      padding: 14px 35px 14px 15px;
-      border-radius: 16px;
-      background-color: $white200;
-      background-image: url(../assets/icons/dropdown2.svg);
-      background-position: right 15px center;
-      background-repeat: no-repeat;
-
-      & span {
-        color: $black;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: -0.42px;
-        opacity: 0.75;
-      }
-    }
-
-    & .select-items {
-      top: auto;
-      bottom: calc(100% + 4px);
-      border-radius: 16px;
-    }
-
-    & .select-item {
-      padding: 14px 15px;
-      color: $black;
-      border-radius: 16px;
-
-      &:hover {
-        background-color: $white100;
-      }
-
-      &.same-as-selected {
-        color: $white;
-        background-color: $orange;
-      }
-    }
-  }
-
-  &__button-reset {
-    padding: 16px 10px;
-    color: $grey900;
-    text-decoration: underline;
-    background-color: rgba($color: $white100, $alpha: 0);
-    box-shadow: none;
-    transition: $baseTransition;
-
-    &:hover {
-      color: rgba($color: $black, $alpha: 0.5);
-    }
-
-    &::after {
-      display: none;
+    @include mobile {
+      width: auto;
+      margin: 60px auto 0;
+      font-size: 14px;
     }
   }
 }
