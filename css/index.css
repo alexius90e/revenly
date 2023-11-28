@@ -1593,6 +1593,11 @@ ul {
     margin-right: -36px;
   }
 }
+@media (max-width: 576px) {
+  .blog__slider {
+    margin-right: -10px;
+  }
+}
 .blog__slide {
   padding: 0 0 30px;
   overflow: hidden;
