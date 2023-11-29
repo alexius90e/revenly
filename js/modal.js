@@ -16,5 +16,17 @@ modal.addEventListener('click', (event) => {
 
 modalForm.addEventListener('submit', (event) => {
   event.preventDefault();
-  modal.classList.remove('active');
+
+  const formData = new FormData(modalForm);
+  const userName = formData.get('userName');
+  const userEmail = formData.get('userEmail');
+
+  modalForm.reset();
+
+  fetch('../contact-form-handler.php', {
+    method: 'POST',
+    data: { userName, userEmail },
+  }).then(() => {
+    modal.classList.remove('active');
+  });
 });

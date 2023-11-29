@@ -820,8 +820,21 @@
           </p>
 
           <form class="modal__form">
-            <input class="modal__input" type="text" placeholder="Your name" />
-            <input class="modal__input" type="email" placeholder="Your email" />
+            <input
+              class="modal__input"
+              type="text"
+              name="userName"
+              placeholder="Your name"
+              required
+              minlength="3"
+            />
+            <input
+              class="modal__input"
+              type="email"
+              name="userEmail"
+              placeholder="Your email"
+              required
+            />
             <button class="button">join waitlist</button>
           </form>
         </div>
